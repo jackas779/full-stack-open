@@ -1,6 +1,6 @@
-# Diaagrama de Secuencia part0
+# Diaagrama de Secuencia 0.5
 
-  Diagrama que representa la peticion que se realiza una vesz se envia una nota en el formulario y el servidor recibe la peticion.
+  Diagrama que representa la aplicacion de una sola pagina
 
 ```mermaid
 sequenceDiagram

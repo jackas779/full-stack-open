@@ -9,21 +9,11 @@ sequenceDiagram
   participant A as Servidor
   participant C as BD
 
-  B->>A: Petición POST /notes
+  B->>A: Realiza peticion GET
   activate A
-  Note right of B: Envía la nota nueva
   Note over A: Procesa petición
-  A->>C: INSERT INTO notas (contenido)
-  activate C
-  C-->>A: OK
-  deactivate C
-  Note right of A: Crea nueva nota en en
-  A-->>B: Respuesta 302 (Location: /notes)
+  A-->>B: devuevle HTML code
   deactivate A
-  Note left of A: Redirección al cliente
-  activate B
-  Note over B: Recibe redirección
-  B->>A: GET /notes
-  deactivate B
+  activate C
   Note over B: Reinicia ciclo
 ```

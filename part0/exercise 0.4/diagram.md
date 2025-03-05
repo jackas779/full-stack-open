@@ -1,4 +1,4 @@
-# Diaagrama de Secuencia 0.4
+# Diagrama de Secuencia 0.4
 
   Diagrama que representa la peticion que se realiza al momento de enviar una nota en el formulario y el servidor recibe la peticion.
 

@@ -34,13 +34,30 @@
 
 // export default App
 
+////// todo componente de react tiene que comenzar en maysucula
 
+const Hello = ({name, age}) =>{
+  return (
+    <>
+      <p>Hello world {name} your age is : {age}</p>
+    </>
+  )
+}
 
 const App = () => {
+  const a = 21
+  const b = 5
+  const now = ['peter','anais']
+  console.log(a + b)
   return (
-    <div>
-      <p>Hello world modificado </p>
-    </div>
+    <>
+      <Hello name='Jorge luna'  age='45'/>
+      <Hello name='auron'  age='58'/>
+      <Hello name='Midu'  age='20'/>
+      <p>
+        {now}
+      </p>
+    </>
   )
 }
 
